@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getEventBlocksForDisplay returns the offset of the block start to the hour start in percentage of hour 1`] = `
+Array [
+  Object {
+    "events": Array [
+      Object {
+        "displayText": "09:30-10:30 EVENT",
+        "height": "100%",
+        "topOffset": "0%",
+        "width": "100%",
+      },
+    ],
+    "startingHour": 0,
+    "topOffset": "50%",
+  },
+  Object {
+    "events": Array [
+      Object {
+        "displayText": "11:30-12:30 EVENT",
+        "height": "100%",
+        "topOffset": "0%",
+        "width": "50%",
+      },
+      Object {
+        "displayText": "12:00-12:30 EVENT",
+        "height": "50%",
+        "topOffset": "50%",
+        "width": "50%",
+      },
+    ],
+    "startingHour": 2,
+    "topOffset": "50%",
+  },
+]
+`;
+
+exports[`getHoursWithEventBlocks returns the working hours with event blocks attached to the hour within which they start 1`] = `
+Array [
+  Object {
+    "displayText": "09:00",
+    "eventsBlock": Object {
+      "events": Array [
+        Object {
+          "displayText": "09:30-10:30 EVENT",
+          "height": "100%",
+          "topOffset": "0%",
+          "width": "100%",
+        },
+      ],
+      "startingHour": 0,
+      "topOffset": "50%",
+    },
+  },
+  Object {
+    "displayText": "10:00",
+    "eventsBlock": Object {},
+  },
+  Object {
+    "displayText": "11:00",
+    "eventsBlock": Object {
+      "events": Array [
+        Object {
+          "displayText": "11:30-12:30 EVENT",
+          "height": "100%",
+          "topOffset": "0%",
+          "width": "50%",
+        },
+        Object {
+          "displayText": "12:00-12:30 EVENT",
+          "height": "50%",
+          "topOffset": "50%",
+          "width": "50%",
+        },
+      ],
+      "startingHour": 2,
+      "topOffset": "50%",
+    },
+  },
+  Object {
+    "displayText": "12:00",
+    "eventsBlock": Object {},
+  },
+  Object {
+    "displayText": "13:00",
+    "eventsBlock": Object {},
+  },
+  Object {
+    "displayText": "14:00",
+    "eventsBlock": Object {},
+  },
+  Object {
+    "displayText": "15:00",
+    "eventsBlock": Object {},
+  },
+  Object {
+    "displayText": "16:00",
+    "eventsBlock": Object {},
+  },
+]
+`;
