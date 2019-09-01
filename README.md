@@ -22,7 +22,7 @@ renderDay(EVENTS1)
 ```
 #### Result
 
-<img src="/images/events%20example%201.png" width="400">
+<img src="/images/events%20example%201.png" width="500">
 
 
 ### Example 2
@@ -39,4 +39,4 @@ renderDay(EVENTS1)
 ```
 #### Result
 
-<img src="/images/events%20example%202.png" width="400">
+<img src="/images/events%20example%202.png" width="500">
