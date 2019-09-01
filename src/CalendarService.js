@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import _ from 'lodash';
 
 const STARTING_HOUR = 9;
